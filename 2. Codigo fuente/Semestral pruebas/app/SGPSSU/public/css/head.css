@@ -1,0 +1,154 @@
+/*
+:root {​​
+    --primario:#681A5D;
+    --secundario:#51034F;
+    --terceario:#DCCDDC;
+    --negro:#000000;
+    --blanco:#ffffff;
+}​​
+​​*/
+
+* {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	float: left;
+	margin: 0.5em;
+}
+
+.title {
+	color: #51034f;
+	width: 50em;
+	height: 10em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.title p {
+	color: black;
+}
+
+nav {
+	clear: both;
+	height: 47px;
+	background-color: #681a5d;
+}
+/*Formato general del navegador principal*/
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-right: 30px;
+}
+/*Formato general de los items del navegador principal*/
+nav ul li {
+	position: relative;
+	list-style: none;
+	float: left;
+}
+/*Formato especificio del item "Acerca" del navegador principal*/
+.active {
+	background-color: #51034f;
+}
+/*Formato general de los enlaces dentro de los items del navegador principal*/
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/*Color de hover del menu principal y lo mantiene cuando se muestra la lista desplegable de primer nivel*/
+nav ul li a:hover,
+.dropdown:hover,
+#acerca:hover {
+	background-color: #51034f;
+}
+/*Formato de la lista desplegable de primer nivel*/
+nav ul ul {
+	position: absolute;
+	display: none;
+}
+/*Muestra la lista desplegable de primer nivel*/
+nav ul li:hover > ul {
+	display: block;
+}
+/*Color de hover de la lista desplegable de primer nivel y lo mantiene durante el hover de la lista desplegable de segundo nivel*/
+nav ul ul li a:hover,
+.subdropdown:hover {
+	background-color: #dccddc;
+}
+/*Formato general de los items de la lista desplegable de primer nivel*/
+nav ul ul li {
+	min-width: 160px;
+	float: none;
+	display: list-item;
+	position: relative;
+	background-color: #f9f9f9;
+}
+/*Formato general de los enlaces dentro de los items de la lista desplegable de primer nivel*/
+nav ul ul li a {
+	color: black;
+	text-align: left;
+}
+/*Posición de la lista desplegable de segundo nivel*/
+nav ul ul ul li {
+	position: relative;
+	top: -48px;
+	left: 160px;
+}
+/*Color de hover de la lista desplegable de segundo nivel*/
+nav ul ul ul li a:hover {
+	background-color: #fdeedc;
+}
+
+.center {
+	margin: auto;
+	width: 40%;
+	padding: 10px;
+	display: flex;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	margin-top: 2%;
+}
+
+
+.contenedorbread {
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+ul.breadcrumb {
+	margin: 0.5%;
+	list-style: none;
+	background-color: rgb(255, 255, 255);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul.breadcrumb li {
+	display: inline;
+	font-size: 12px;
+}
+
+ul.breadcrumb li + li:before {
+	color: black;
+	content: '\00a0 >>> \00a0';
+}
+
+ul.breadcrumb li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+	color: #692561;
+	text-decoration: underline;
+}

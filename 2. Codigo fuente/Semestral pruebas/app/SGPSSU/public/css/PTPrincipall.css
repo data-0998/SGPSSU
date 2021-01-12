@@ -1,0 +1,34 @@
+.middle {
+	width: 75%;
+	margin: 1em auto;
+}
+
+.middle p {
+	line-height: 32px;
+	width: 75%;
+	margin-top: 1em;
+}
+
+.middle h1 {
+	color: #681a5d;
+}
+
+.middle ol {
+	padding-left: 2em;
+}
+
+.middle ol li {
+	counter-increment: list;
+	list-style-type: none;
+	position: relative;
+}
+
+/* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+.middle ol li:before {
+	color: #681a5d;
+	content: counter(list) '.';
+	left: -32px;
+	position: absolute;
+	text-align: right;
+	width: 26px;
+}

@@ -1,0 +1,223 @@
+
+/*Estilo global del sitio web*/
+* {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*Estilo del header*/
+.encabezado {
+	display: flex;
+	align-items: center;
+}
+
+.logoUTP {
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+
+.encabezado-titulo {
+	flex: 2;
+	color: #51034f;
+}
+
+.encabezado-titulo h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+}
+
+.encabezado-titulo p {
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/*Estilo de los íconos e imagenes extra del header*/
+.encabezado-notificacion {
+	margin: 4px;
+	padding: 3px;
+}
+
+.imagen-notificacion {
+	width: 40px;
+	height: 40px;
+}
+
+.encabezado-perfil {
+	margin: 4px;
+	padding: 3px;
+	border: 3px solid #681a5d;
+	border-radius: 1em;
+}
+
+.imagen-perfil {
+	width: 40px;
+	height: 40px;
+}
+
+.encabezado-sesion {
+	margin: 4px;
+	padding: 14px 20px;
+	border: 3px solid #681a5d;
+	border-radius: 1em;
+}
+
+.encabezado-sesion a {
+	font-size: large;
+	text-decoration: none;
+}
+
+.encabezado-servicio {
+	margin: 5px 20px 5px 9px;
+	padding: 15px;
+	border: 3px solid #681a5d;
+	border-radius: 4em;
+}
+
+.imagen-servicio {
+	width: 75px;
+	height: 75px;
+}
+
+/*Formato general del navegador principal*/
+.navegador {
+	height: 47px;
+	background-color: #681a5d;
+	overflow: hidden;
+}
+
+.navegador ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*Formato general de los items del navegador principal*/
+.navegador ul li {
+	display: inline-block;
+	text-align: center;
+	list-style: none;
+	width: 220px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+/*Formato general de los enlaces dentro de los items del navegador principal*/
+.navegador ul li a {
+	width: 220px;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 13px 16px;
+	text-decoration: none;
+}
+
+/*Color de hover del menu principal y lo mantiene cuando se muestra la lista desplegable de primer nivel*/
+.navegador ul li a:hover,
+.dropdown:hover {
+	background-color: #51034f;
+}
+
+/*Formato de la lista desplegable*/
+.navegador ul ul {
+	position: absolute;
+	display: none;
+}
+
+/*Muestra la lista desplegable*/
+.navegador ul li:hover > ul {
+	display: block;
+}
+
+/*Color de hover de la lista desplegable de primer nivel*/
+.navegador ul ul li a:hover {
+	background-color: #dccddc;
+}
+
+/*Formato general de los items de la lista desplegable de primer nivel*/
+.navegador ul ul li {
+	min-width: 205px;
+	float: none;
+	display: list-item;
+	position: relative;
+	background-color: #f9f9f9;
+}
+
+/*Formato general de los enlaces dentro de los items de la lista desplegable de primer nivel*/
+.navegador ul ul li a {
+	color: black;
+	text-align: left;
+}
+
+
+/*centrear elementos*/
+.center {
+	margin: auto;
+	width: 40%;
+	padding: 10px;
+	display: flex;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	margin-top: 2%;
+}
+
+/*Estilo del breadcrumbs*/
+.contenedorbread {
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+ul.breadcrumb {
+	margin: 0.5%;
+	list-style: none;
+	background-color: rgb(255, 255, 255);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul.breadcrumb li {
+	display: inline;
+	font-size: 12px;
+}
+
+ul.breadcrumb li + li:before {
+	color: black;
+	content: '\00a0 >>> \00a0';
+}
+
+ul.breadcrumb li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+	color: #692561;
+	text-decoration: underline;
+}
+
+/*Adaptabilidad a pantallas*/
+@media screen and (max-width: 900px) {
+	.encabezado-notificacion {
+		display: none;
+	}
+
+	.encabezado-perfil {
+		display: none;
+	}
+
+	.encabezado-sesion {
+		display: none;
+	}
+
+	.encabezado-servicio {
+		display: none;
+	}
+}

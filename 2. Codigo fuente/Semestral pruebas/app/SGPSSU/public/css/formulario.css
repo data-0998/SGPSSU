@@ -1,0 +1,242 @@
+/*Contendor del formulario*/
+.contenedorForm {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/*Ajuste del contenedor a la pantalla*/
+@media screen and (max-width: 880px) {
+	.contenedorForm {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+/*Estilo del titulo de la página*/
+.ContenedorTitulos {
+	background-color: #e6e6e7;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.tituloinicial {
+	padding: 2% 1% 2%;
+	color: #681a5d;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-transform: uppercase;
+}
+
+/*Estructura del campo fecha y proponente*/
+.encabezadoForm {
+	padding: 20px 0 20px 0;
+	margin-right: 10px 0 10px 0;
+	text-align: right;
+}
+
+/*Estilo de los titulos de las secciones del formulario*/
+.legendEstilo {
+	margin: 0 auto;
+	border: none;
+	color: #681a5d;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+}
+.subtitulos {
+	color: #681a5d;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+}
+.hrClass {
+	margin: 0 0 10px;
+	border: 1px solid #797979;
+}
+.seccionField {
+	margin: 30px 0;
+}
+
+/*Estructura de los label e inputs del formulario*/
+.formGroup {
+	padding: 20px 0 20px 0;
+}
+
+.formP {
+	margin-left: 10px;
+	font-size: medium;
+}
+
+.formGroupLabel {
+	margin-left: 10px;
+	display: inline-block;
+	width: 250px;
+	font-size: medium;
+}
+
+.formGroupInput {
+	display: inline-block;
+	width: 300px;
+	margin: 0 0 10px 10px;
+	padding: 2px;
+}
+
+.formGroupInput input {
+	width: 300px;
+}
+
+/*Estilo de las areas de texto*/
+.descripcionesContenedores {
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.totalClass {
+	font-weight: bold;
+	text-align: right;
+}
+
+/*Estructura de la seccion "tipo de proyecto"*/
+.TipoProyecto {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contenedorTipoProyecto,
+.descripcionesContenedores {
+	display: flex;
+}
+
+/*Estructura de los radio botones y checkbox*/
+.contenedorRadioCheck {
+	padding: 20px 0 20px 0;
+	margin-left: 30px;
+}
+.radioCheck {
+	padding-right: 40px;
+}
+
+/*Estilo de los radio botones*/
+input[type='radio'] {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid darkgray;
+	border-radius: 50%;
+	outline: none;
+	box-shadow: 0 0 5px 0px gray inset;
+}
+input[type='radio']:hover {
+	box-shadow: 0 0 5px 0px orange inset;
+}
+input[type='radio']:before {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 60%;
+	margin: 20% auto;
+	border-radius: 50%;
+}
+input[type='radio']:checked:before {
+	background: #692561;
+}
+
+/*Estilo de los checkbox*/
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid darkgray;
+	outline: none;
+	box-shadow: 0 0 5px 0px gray inset;
+}
+
+input[type='checkbox']:hover {
+	box-shadow: 0 0 5px 0px orange inset;
+}
+
+input[type='checkbox']:checked {
+	background: #692561;
+	color: white;
+	content: '\2713';
+	text-align: center;
+}
+
+/*Estilo de las tablas */
+.table {
+	background-color: #e6dde6;
+}
+th,
+.td-actividades {
+	text-align: center;
+}
+.tabla-actividades {
+	margin: 0 10px;
+}
+.textClass {
+	resize: none;
+	width: 300px;
+}
+#id-actividades {
+	resize: none;
+}
+
+/*Estilo de los botones de las tablas*/
+.glyphicon-plus,
+.glyphicon-remove {
+	color: #692561;
+}
+
+/*Estructura de los botones del final del formulario*/
+.contenedorBotones {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.contenedorBotones input,
+.contenedorBotones button {
+	margin: 10px 50px 30px;
+}
+
+button:disabled,
+button[disabled] {
+	border: 1px solid #999999;
+	background-color: #886282;
+	color: white;
+}
+
+.botonespantalla {
+	background-color: #692561;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 12px;
+}
+/*Estilo de mensaje de retroalimentacion*/
+.retroalimentacion {
+	font-size: 10px;
+	color: gray;
+	text-align: center;
+}
+.cursiva {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*Estilo de los mensajes de error*/
+.mensajes {
+	color: #8a0000;
+	font-weight: bold;
+}
+.mensajePrincipal {
+	text-align: center;
+	color: #8a0000;
+	font-weight: bold;
+	font-size: x-large;
+}
